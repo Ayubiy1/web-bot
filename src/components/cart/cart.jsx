@@ -2,8 +2,8 @@ import Buttons from "../button/button";
 import { totolPrice } from "../units/totol-price";
 import "./cart.css";
 
-const Cart = ({ cartItem }) => {
-  // console.log(totolPrice);
+const Cart = ({ cartItem, onCheckOut }) => {
+  console.log(onCheckOut);
   return (
     <>
       <div className="cart__container">
@@ -18,7 +18,8 @@ const Cart = ({ cartItem }) => {
         <Buttons
           title={cartItem.length > 0 ? "Sotib olish" : "Buyurtma"}
           type={"checkbox"}
-          disabled
+          onClick={onCheckOut}
+          // disabled
         />
       </div>
     </>

@@ -10,7 +10,7 @@ const Buttons = (props) => {
           (props.type === "checkbox" && "checkbox")
         }`}
         onClick={props.onClick}
-        disabled={props.disabled}
+        // disabled={props.disabled}
       >
         {props.title}
       </button>

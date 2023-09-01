@@ -49,12 +49,15 @@ function App() {
     }
   };
 
-  const onCheckOut = () => {};
+  const onCheckOut = () => {
+    telegram.MainButton.text = "Sotib olish";
+    telegram.MainButton.show();
+  };
 
   return (
     <>
       <h2 className="title">Online Kurslar</h2>
-      <Cart cartItem={cartItem} />
+      <Cart cartItem={cartItem} onCheckOut={onCheckOut} />
       <div className="cards__container">
         {courses.map((item) => (
           <Card
