@@ -1,0 +1,54 @@
+::root {
+  --primary-color: #e0c521;
+}
+.btn {
+  padding: 1rem 0.8rem;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  width: 120px;
+  box-shadow: 1px -3px 52px -5px rgb(0, 0, 0, 0.77);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  color: #000;
+  background-color: #fff;
+}
+.btn.add {
+  background-color: #e0c521;
+  color: #fff;
+}
+.btn.add:hover {
+  background-color: #cab320 !important;
+  color: #fff;
+}
+.btn.add:active {
+  background-color: #8f7e12 !important;
+}
+
+.btn.remove {
+  background-color: tomato;
+  color: #fff;
+}
+.btn.remove:hover {
+  background-color: rgb(209, 83, 61) !important;
+  color: #fff;
+}
+.btn.remove:active {
+  background-color: rgb(184, 48, 24) !important;
+}
+
+.btn.checkbox {
+  background-color: #47bb77c6;
+  width: 150px;
+  color: #fff;
+  font-size: 16px;
+}
+.btn.checkbox:hover {
+  background-color: #47bb78 !important;
+  color: #fff;
+}
+.btn.checkbox:active {
+  background-color: #309341 !important;
+}
